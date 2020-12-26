@@ -2,17 +2,15 @@
 FROM node:12.19.1
 
 # set working directory
+RUN mkdir -p /opt/web
 WORKDIR /opt/web
 
-# add `./node_modules/.bin` to $PATH
-ENV PATH ./node_modules/.bin:$PATH
-
 # install app dependencies
-COPY package.json ./
+COPY package.json /opt/web/
 RUN npm install --silent
 
 # add working directory
-COPY . ./
+COPY . /opt/web/
 
 # build
 RUN npm run build
