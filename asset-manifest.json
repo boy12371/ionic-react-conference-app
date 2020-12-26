@@ -2,7 +2,7 @@
   "files": {
     "static/js/0.4df8a8d9.chunk.js": "/ionic-react-conference-app/static/js/0.4df8a8d9.chunk.js",
     "static/js/0.4df8a8d9.chunk.js.map": "/ionic-react-conference-app/static/js/0.4df8a8d9.chunk.js.map",
-    "main.css": "/ionic-react-conference-app/static/css/main.9b975b3e.chunk.css",
+    "main.css": "/ionic-react-conference-app/static/css/main.a8bd071c.chunk.css",
     "main.js": "/ionic-react-conference-app/static/js/main.f11cfae5.chunk.js",
     "main.js.map": "/ionic-react-conference-app/static/js/main.f11cfae5.chunk.js.map",
     "polyfills-dom.js": "/ionic-react-conference-app/static/js/polyfills-dom.d55b275e.chunk.js",
@@ -121,20 +121,22 @@
     "static/js/58.00a03b9e.chunk.js": "/ionic-react-conference-app/static/js/58.00a03b9e.chunk.js",
     "static/js/58.00a03b9e.chunk.js.map": "/ionic-react-conference-app/static/js/58.00a03b9e.chunk.js.map",
     "index.html": "/ionic-react-conference-app/index.html",
-    "precache-manifest.bb10a9386ec7afe4942710a06bc7f5b7.js": "/ionic-react-conference-app/precache-manifest.bb10a9386ec7afe4942710a06bc7f5b7.js",
+    "precache-manifest.dc2472951b461b2e8faffba9792b884a.js": "/ionic-react-conference-app/precache-manifest.dc2472951b461b2e8faffba9792b884a.js",
     "service-worker.js": "/ionic-react-conference-app/service-worker.js",
     "static/css/4.c3da1650.chunk.css.map": "/ionic-react-conference-app/static/css/4.c3da1650.chunk.css.map",
-    "static/css/main.9b975b3e.chunk.css.map": "/ionic-react-conference-app/static/css/main.9b975b3e.chunk.css.map",
+    "static/css/main.a8bd071c.chunk.css.map": "/ionic-react-conference-app/static/css/main.a8bd071c.chunk.css.map",
     "static/js/4.88fc8a5d.chunk.js.LICENSE.txt": "/ionic-react-conference-app/static/js/4.88fc8a5d.chunk.js.LICENSE.txt",
     "static/js/52.7d696e34.chunk.js.LICENSE.txt": "/ionic-react-conference-app/static/js/52.7d696e34.chunk.js.LICENSE.txt",
     "static/js/58.00a03b9e.chunk.js.LICENSE.txt": "/ionic-react-conference-app/static/js/58.00a03b9e.chunk.js.LICENSE.txt",
-    "static/js/polyfills-dom.d55b275e.chunk.js.LICENSE.txt": "/ionic-react-conference-app/static/js/polyfills-dom.d55b275e.chunk.js.LICENSE.txt"
+    "static/js/polyfills-dom.d55b275e.chunk.js.LICENSE.txt": "/ionic-react-conference-app/static/js/polyfills-dom.d55b275e.chunk.js.LICENSE.txt",
+    "static/media/About.scss": "/ionic-react-conference-app/static/media/seattle.578d3081.jpg",
+    "static/media/SpeakerDetail.scss": "/ionic-react-conference-app/static/media/speaker-background.427ff733.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1e99216f.js",
     "static/css/4.c3da1650.chunk.css",
     "static/js/4.88fc8a5d.chunk.js",
-    "static/css/main.9b975b3e.chunk.css",
+    "static/css/main.a8bd071c.chunk.css",
     "static/js/main.f11cfae5.chunk.js"
   ]
 }

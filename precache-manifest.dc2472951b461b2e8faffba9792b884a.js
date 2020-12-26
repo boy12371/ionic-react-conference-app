@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f3b44146fa52ee0684bf0fbbca92de3e",
+    "revision": "2f7df88e6c94e50886e7636dbd84be38",
     "url": "/ionic-react-conference-app/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ionic-react-conference-app/static/css/4.c3da1650.chunk.css"
   },
   {
-    "revision": "d3080b56257646cd54ba",
-    "url": "/ionic-react-conference-app/static/css/main.9b975b3e.chunk.css"
+    "revision": "a9ec788521fd55ed0d7e",
+    "url": "/ionic-react-conference-app/static/css/main.a8bd071c.chunk.css"
   },
   {
     "revision": "799edfbcb5cc1669a494",
@@ -248,7 +248,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ionic-react-conference-app/static/js/9.523f29ef.chunk.js"
   },
   {
-    "revision": "d3080b56257646cd54ba",
+    "revision": "a9ec788521fd55ed0d7e",
     "url": "/ionic-react-conference-app/static/js/main.f11cfae5.chunk.js"
   },
   {
@@ -262,5 +262,25 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "69489f2e039faeea398f",
     "url": "/ionic-react-conference-app/static/js/runtime-main.1e99216f.js"
+  },
+  {
+    "revision": "3a6eca59b3cfb8483b14cbf5b6b22773",
+    "url": "/ionic-react-conference-app/static/media/austin.3a6eca59.jpg"
+  },
+  {
+    "revision": "806296cc3323673cc2b373840427df22",
+    "url": "/ionic-react-conference-app/static/media/chicago.806296cc.jpg"
+  },
+  {
+    "revision": "ae072b54bcb93549239f56b7645b8af4",
+    "url": "/ionic-react-conference-app/static/media/madison.ae072b54.jpg"
+  },
+  {
+    "revision": "578d3081e26120d51e7381efc884b776",
+    "url": "/ionic-react-conference-app/static/media/seattle.578d3081.jpg"
+  },
+  {
+    "revision": "427ff7335eb512308c89b570ae20e018",
+    "url": "/ionic-react-conference-app/static/media/speaker-background.427ff733.png"
   }
 ]);
