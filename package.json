@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": "12.x"
+    "node": "12.19.x",
+    "npm": "6.14.x"
   },
   "dependencies": {
     "@capacitor/android": "^2.4.5",

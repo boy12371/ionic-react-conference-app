@@ -4,5 +4,6 @@
   "keywords": ["ionic", "react"],
   "website": "https://github.com",
   "repository": "https://github.com/boy12371/ionic-react-conference-app",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
   "image": "heroku/nodejs"
 }
