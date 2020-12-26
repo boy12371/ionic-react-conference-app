@@ -23,14 +23,14 @@ const Tutorial: React.FC<TutorialProps> = ({ history, setHasSeenTutorial, setMen
   useIonViewWillEnter(() => {
     setMenuEnabled(false);
   });
-  
-  const startApp = async () => { 
+
+  const startApp = async () => {
     await setHasSeenTutorial(true);
     await setMenuEnabled(true);
-    history.push('/tabs/schedule', { direction: 'none' });
+    history.push(`${process.env.PUBLIC_URL}/tabs/schedule`, { direction: 'none' });
   };
 
-  const handleSlideChangeStart = () => { 
+  const handleSlideChangeStart = () => {
     slideRef.current!.isEnd().then(isEnd => setShowSkip(!isEnd));
   };
 

@@ -11,20 +11,20 @@ import './Menu.css'
 
 const routes = {
   appPages: [
-    { title: 'Schedule', path: '/tabs/schedule', icon: calendarOutline },
-    { title: 'Speakers', path: '/tabs/speakers', icon: peopleOutline },
-    { title: 'Map', path: '/tabs/map', icon: mapOutline },
-    { title: 'About', path: '/tabs/about', icon: informationCircleOutline }
+    { title: 'Schedule', path: `${process.env.PUBLIC_URL}/tabs/schedule`, icon: calendarOutline },
+    { title: 'Speakers', path: `${process.env.PUBLIC_URL}/tabs/speakers`, icon: peopleOutline },
+    { title: 'Map', path: `${process.env.PUBLIC_URL}/tabs/map`, icon: mapOutline },
+    { title: 'About', path: `${process.env.PUBLIC_URL}/tabs/about`, icon: informationCircleOutline }
   ],
   loggedInPages: [
-    { title: 'Account', path: '/account', icon: person },
-    { title: 'Support', path: '/support', icon: help },
-    { title: 'Logout', path: '/logout', icon: logOut }
+    { title: 'Account', path: `${process.env.PUBLIC_URL}/account`, icon: person },
+    { title: 'Support', path: `${process.env.PUBLIC_URL}/support`, icon: help },
+    { title: 'Logout', path: `${process.env.PUBLIC_URL}/logout`, icon: logOut }
   ],
   loggedOutPages: [
-    { title: 'Login', path: '/login', icon: logIn },
-    { title: 'Support', path: '/support', icon: help },
-    { title: 'Signup', path: '/signup', icon: personAdd }
+    { title: 'Login', path: `${process.env.PUBLIC_URL}/login`, icon: logIn },
+    { title: 'Support', path: `${process.env.PUBLIC_URL}/support`, icon: help },
+    { title: 'Signup', path: `${process.env.PUBLIC_URL}/signup`, icon: personAdd }
   ]
 };
 
@@ -81,7 +81,7 @@ const Menu: React.FC<MenuProps> = ({ darkMode, history, isAuthenticated, setDark
         <IonList lines="none">
           <IonListHeader>Tutorial</IonListHeader>
           <IonItem button onClick={() => {
-            history.push('/tutorial');
+            history.push(`${process.env.PUBLIC_URL}/tutorial`);
           }}>
             <IonIcon slot="start" icon={hammer} />
             Show Tutorial

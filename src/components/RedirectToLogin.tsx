@@ -11,7 +11,7 @@ const RedirectToLogin: React.FC<RedirectToLoginProps> = ({ setIsLoggedIn, setUse
   useEffect(() => {
     setIsLoggedIn(false);
     setUsername(undefined);
-    ionRouterContext.push('/tabs/schedule')
+    ionRouterContext.push(`${process.env.PUBLIC_URL}/tabs/schedule`)
   }, [setIsLoggedIn, setUsername, ionRouterContext]);
   return null;
 };

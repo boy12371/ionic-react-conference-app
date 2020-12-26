@@ -80,19 +80,19 @@ const IonicApp: React.FC<IonicAppProps> = ({ darkMode, schedule, setIsLoggedIn, 
                 We use IonRoute here to keep the tabs state intact,
                 which makes transitions between tabs and non tab pages smooth
                 */}
-                <Route path="/tabs" render={() => <MainTabs />} />
-                <Route path="/account" component={Account} />
-                <Route path="/login" component={Login} />
-                <Route path="/signup" component={Signup} />
-                <Route path="/support" component={Support} />
-                <Route path="/tutorial" component={Tutorial} />
-                <Route path="/logout" render={() => {
+                <Route path={`${process.env.PUBLIC_URL}/tabs`} render={() => <MainTabs />} />
+                <Route path={`${process.env.PUBLIC_URL}/account`} component={Account} />
+                <Route path={`${process.env.PUBLIC_URL}/login`} component={Login} />
+                <Route path={`${process.env.PUBLIC_URL}/signup`} component={Signup} />
+                <Route path={`${process.env.PUBLIC_URL}/support`} component={Support} />
+                <Route path={`${process.env.PUBLIC_URL}/tutorial`} component={Tutorial} />
+                <Route path={`${process.env.PUBLIC_URL}/logout`} render={() => {
                   return <RedirectToLogin
                     setIsLoggedIn={setIsLoggedIn}
                     setUsername={setUsername}
                   />;
                 }} />
-                <Route path="/" component={HomeOrTutorial} exact />
+                <Route path={`${process.env.PUBLIC_URL}/`} component={HomeOrTutorial} exact />
               </IonRouterOutlet>
             </IonSplitPane>
           </IonReactRouter>

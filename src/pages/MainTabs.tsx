@@ -16,33 +16,33 @@ const MainTabs: React.FC<MainTabsProps> = () => {
   return (
     <IonTabs>
       <IonRouterOutlet>
-        <Redirect exact path="/tabs" to="/tabs/schedule" />
+        <Redirect exact path={`${process.env.PUBLIC_URL}/tabs`} to={`${process.env.PUBLIC_URL}tabs/schedule`} />
         {/*
           Using the render method prop cuts down the number of renders your components will have due to route changes.
           Use the component prop when your component depends on the RouterComponentProps passed in automatically.
         */}
-        <Route path="/tabs/schedule" render={() => <SchedulePage />} exact={true} />
-        <Route path="/tabs/speakers" render={() => <SpeakerList />} exact={true} />
-        <Route path="/tabs/speakers/:id" component={SpeakerDetail} exact={true} />
-        <Route path="/tabs/schedule/:id" component={SessionDetail} />
-        <Route path="/tabs/speakers/sessions/:id" component={SessionDetail} />
-        <Route path="/tabs/map" render={() => <MapView />} exact={true} />
-        <Route path="/tabs/about" render={() => <About />} exact={true} />
+        <Route path={`${process.env.PUBLIC_URL}/tabs/schedule`} render={() => <SchedulePage />} exact={true} />
+        <Route path={`${process.env.PUBLIC_URL}/tabs/speakers`} render={() => <SpeakerList />} exact={true} />
+        <Route path={`${process.env.PUBLIC_URL}/tabs/speakers/:id`} component={SpeakerDetail} exact={true} />
+        <Route path={`${process.env.PUBLIC_URL}/tabs/schedule/:id`} component={SessionDetail} />
+        <Route path={`${process.env.PUBLIC_URL}/tabs/speakers/sessions/:id`} component={SessionDetail} />
+        <Route path={`${process.env.PUBLIC_URL}/tabs/map`} render={() => <MapView />} exact={true} />
+        <Route path={`${process.env.PUBLIC_URL}/tabs/about`} render={() => <About />} exact={true} />
       </IonRouterOutlet>
       <IonTabBar slot="bottom">
-        <IonTabButton tab="schedule" href="/tabs/schedule">
+        <IonTabButton tab="schedule" href={`${process.env.PUBLIC_URL}/tabs/schedule`}>
           <IonIcon icon={calendar} />
           <IonLabel>Schedule</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="speakers" href="/tabs/speakers">
+        <IonTabButton tab="speakers" href={`${process.env.PUBLIC_URL}/tabs/speakers`}>
           <IonIcon icon={people} />
           <IonLabel>Speakers</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="map" href="/tabs/map">
+        <IonTabButton tab="map" href={`${process.env.PUBLIC_URL}/tabs/map`}>
           <IonIcon icon={location} />
           <IonLabel>Map</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="about" href="/tabs/about">
+        <IonTabButton tab="about" href={`${process.env.PUBLIC_URL}/tabs/about`}>
           <IonIcon icon={informationCircle} />
           <IonLabel>About</IonLabel>
         </IonTabButton>

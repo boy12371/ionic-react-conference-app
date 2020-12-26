@@ -29,12 +29,12 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ session, addFavorite, rem
   }
 
   const isFavorite = favoriteSessions.indexOf(session.id) > -1;
-  
-  const toggleFavorite = () => { 
+
+  const toggleFavorite = () => {
     isFavorite ? removeFavorite(session.id) : addFavorite(session.id);
   };
   const shareSession = () => { };
-  const sessionClick = (text: string) => { 
+  const sessionClick = (text: string) => {
     console.log(`Clicked ${text}`);
   };
 
@@ -43,7 +43,7 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ session, addFavorite, rem
       <IonHeader>
         <IonToolbar>
           <IonButtons slot="start">
-            <IonBackButton defaultHref="/tabs/schedule"></IonBackButton>
+            <IonBackButton defaultHref={`${process.env.PUBLIC_URL}/tabs/schedule`}></IonBackButton>
           </IonButtons>
           <IonButtons slot="end">
             <IonButton onClick={() => toggleFavorite()}>

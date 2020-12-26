@@ -7,7 +7,7 @@ interface StateProps {
 }
 
 const HomeOrTutorial: React.FC<StateProps> = ({ hasSeenTutorial }) => {
-  return hasSeenTutorial ? <Redirect to="/tabs/schedule" /> : <Redirect to="/tutorial" />
+  return hasSeenTutorial ? <Redirect to={`${process.env.PUBLIC_URL}/tabs/schedule`} /> : <Redirect to={`${process.env.PUBLIC_URL}/tutorial`} />
 };
 
 export default connect<{}, StateProps, {}>({

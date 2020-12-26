@@ -35,7 +35,7 @@ const Login: React.FC<LoginProps> = ({setIsLoggedIn, history, setUsername: setUs
     if(username && password) {
       await setIsLoggedIn(true);
       await setUsernameAction(username);
-      history.push('/tabs/schedule', {direction: 'none'});
+      history.push(`${process.env.PUBLIC_URL}/tabs/schedule`, {direction: 'none'});
     }
   };
 
@@ -88,7 +88,7 @@ const Login: React.FC<LoginProps> = ({setIsLoggedIn, history, setUsername: setUs
               <IonButton type="submit" expand="block">Login</IonButton>
             </IonCol>
             <IonCol>
-              <IonButton routerLink="/signup" color="light" expand="block">Signup</IonButton>
+              <IonButton routerLink={`${process.env.PUBLIC_URL}/signup`} color="light" expand="block">Signup</IonButton>
             </IonCol>
           </IonRow>
         </form>

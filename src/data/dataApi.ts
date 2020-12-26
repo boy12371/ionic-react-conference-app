@@ -5,8 +5,8 @@ import { Location } from '../models/Location';
 
 const { Storage } = Plugins;
 
-const dataUrl = '/assets/data/data.json';
-const locationsUrl = '/assets/data/locations.json';
+const dataUrl = `${process.env.PUBLIC_URL}/assets/data/data.json`;
+const locationsUrl = `${process.env.PUBLIC_URL}/assets/data/locations.json`;
 
 const HAS_LOGGED_IN = 'hasLoggedIn';
 const HAS_SEEN_TUTORIAL = 'hasSeenTutorial';
