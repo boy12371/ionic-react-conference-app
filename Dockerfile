@@ -19,6 +19,7 @@ RUN npm run build
 
 # Stage 2 - the production environment
 FROM nginx:latest
-COPY --from=build-deps /opt/web/build /usr/share/nginx/html
 EXPOSE 80
+WORKDIR /usr/share/nginx/html
+COPY /opt/web/build/* /usr/share/nginx/html
 CMD ["nginx", "-g", "daemon off;"]
