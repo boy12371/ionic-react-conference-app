@@ -1,12 +1,8 @@
 {
   "name": "ionic-react-conference-app",
   "description": "Deploy Ionic-react-conference-app on Heroku.",
-  "keywords": ["Ionic", "react"],
+  "keywords": ["ionic", "react"],
   "website": "https://github.com",
   "repository": "https://github.com/boy12371/ionic-react-conference-app",
-  "buildpacks": [
-    {
-      "url": "boy12371/ionic-react-conference-app"
-    }
-  ]
+  "stack": "container"
 }

@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:12.18.1 AS builder
+FROM node:12.19.1
 
 # set working directory
 WORKDIR /opt/web
@@ -14,5 +14,11 @@ RUN npm install --silent
 # add working directory
 COPY . ./
 
-# build app
-CMD ["npm", "start"]
+# build
+RUN npm run build
+
+# Stage 2 - the production environment
+FROM nginx:latest
+COPY --from=build-deps /opt/web/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
