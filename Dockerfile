@@ -7,13 +7,11 @@ WORKDIR /opt/web
 
 # install app dependencies
 COPY package.json /opt/web/
-RUN npm install --silent
-
-# add working directory
 COPY . /opt/web/
 
 # build
+RUN npm i
 RUN npm run build
 
-EXPOSE 80
+EXPOSE 8000
 CMD ["npm", "run", "serve"]
