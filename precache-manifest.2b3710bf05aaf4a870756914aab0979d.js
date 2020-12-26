@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9b77a52e1ca23b6b49763993deba0bef",
+    "revision": "52afe9db31f69ff631b9827fa5e470f9",
     "url": "/ionic-react-conference-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ionic-react-conference-app/static/css/4.c3da1650.chunk.css"
   },
   {
-    "revision": "f850046dd6aef42093ba",
+    "revision": "2485a4c08cf107064b76",
     "url": "/ionic-react-conference-app/static/css/main.a8bd071c.chunk.css"
   },
   {
@@ -248,8 +248,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ionic-react-conference-app/static/js/9.523f29ef.chunk.js"
   },
   {
-    "revision": "f850046dd6aef42093ba",
-    "url": "/ionic-react-conference-app/static/js/main.3f8b6e96.chunk.js"
+    "revision": "2485a4c08cf107064b76",
+    "url": "/ionic-react-conference-app/static/js/main.f75ee075.chunk.js"
   },
   {
     "revision": "04c3dc991206b83f6c8d",
