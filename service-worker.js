@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ionic-react-conference-app/precache-manifest.36f318087b0d68d07c472ce9a4c9aba4.js"
+  "/ionic-react-conference-app/precache-manifest.75ba2620638c882a5b213615384dfc99.js"
 );
 
 self.addEventListener('message', (event) => {
