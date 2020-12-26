@@ -6,7 +6,6 @@ RUN mkdir -p /opt/web
 WORKDIR /opt/web
 
 # install app dependencies
-COPY package.json /opt/web/
 COPY . /opt/web/
 
 # build
