@@ -1,11 +1,9 @@
-setup:
-  addons:
-    - plan: heroku-postgresql
-      as: DATABASE
 build:
   docker:
     web: Dockerfile
   config:
     NODE_ENV: production
 run:
-  web: npm start
+  web: npm run serve
+  worker:
+    image: web

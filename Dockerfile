@@ -1,15 +1,20 @@
 # pull official base image
 FROM node:12.19.1
 
-# Create app directory
-WORKDIR /usr/src/app
+# set working directory
+WORKDIR /app
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
 
-RUN npm install
+# install app dependencies
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm i
 
-# Bundle app source
-COPY . .
+# add app
+COPY . ./
+
+# start app
+EXPOSE 8000
+CMD ["npm", "run", "serve"]
