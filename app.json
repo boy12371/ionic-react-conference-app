@@ -3,5 +3,6 @@
   "description": "Deploy Ionic-react-conference-app on Heroku.",
   "keywords": ["ionic", "react"],
   "website": "https://github.com",
-  "repository": "https://github.com/boy12371/ionic-react-conference-app"
+  "repository": "https://github.com/boy12371/ionic-react-conference-app",
+  "image": "heroku/nodejs"
 }
