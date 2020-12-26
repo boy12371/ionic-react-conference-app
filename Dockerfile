@@ -1,16 +1,15 @@
 # pull official base image
 FROM node:12.19.1
 
-# set working directory
-RUN mkdir -p /opt/web
-WORKDIR /opt/web
+# Create app directory
+WORKDIR /usr/src/app
 
-# install app dependencies
-COPY . /opt/web/
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+COPY package*.json ./
 
-# build
-RUN npm i
-RUN npm run build
+RUN npm install
 
-EXPOSE 8000
-CMD ["npm", "run", "serve"]
+# Bundle app source
+COPY . .
