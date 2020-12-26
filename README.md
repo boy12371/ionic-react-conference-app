@@ -6,7 +6,7 @@ This application is purely a kitchen-sink demo of the Ionic Framework and React.
 **There is not an actual Ionic Conference at this time.** This project is just to show off Ionic components in a real-world application.
 
 # Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fboy12371%2Fionic-react-conference-app)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fboy12371%2Fionic-react-conference-app%2Ftree%2Fheroku)
 
 ## Angular and Vue versions
 
