@@ -24,6 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
     "serve": "http-server ./build/ -p 8000 --cors",
     "clean": "rimraf build",
     "clean:all": "rimraf node_modules build android electron ios package-lock.json yarn.lock"
