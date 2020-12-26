@@ -2,12 +2,6 @@
   "name": "Ionic-react-conference-app",
   "description": "Deploy Ionic-react-conference-app on Heroku.",
   "keywords": ["Ionic", "react"],
-  "env": {
-      "UUID": {
-          "description": "V2Ray UUID",
-          "value": "90071116-81d0-4cea-af37-83491564c005"
-      }
-  },
   "website": "https://github.com",
   "repository": "https://github.com/boy12371/ionic-react-conference-app",
   "stack": "container"
