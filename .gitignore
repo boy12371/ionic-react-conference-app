@@ -83,3 +83,7 @@ yarn-error.log*
 .stencil/
 package-lock.json
 yarn.lock
+
+ios
+android
+electron

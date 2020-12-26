@@ -2,7 +2,9 @@
   "name": "ionic-react-conference-app",
   "version": "0.0.1",
   "private": true,
-  "engines": {"node": "12.x"},
+  "engines": {
+    "node": "12.x"
+  },
   "dependencies": {
     "@capacitor/android": "^2.4.5",
     "@capacitor/core": "^2.4.5",
@@ -20,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean": "rimraf build",
+    "clean:all": "rimraf node_modules build android electron ios package-lock.json yarn.lock"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,6 +49,7 @@
     "@types/react-router-dom": "^5.1.6",
     "node-sass": "^4.14.1",
     "react-scripts": "^3.4.4",
+    "rimraf": "^3.0.2",
     "typescript": "3.7.5"
   }
 }
