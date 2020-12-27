@@ -58,3 +58,13 @@ https://github.com/ionic-team/ionic-vue-conference-app
 | Material Design  | iOS  |
 | -----------------| -----|
 | ![Android About](/resources/screenshots/android-about.png) | ![iOS About](/resources/screenshots/ios-about.png) |
+
+# dependencies
+```
+@capacitor/android @capacitor/core @capacitor/ios @ionic/react @ionic/react-router ionicons react react-dom react-router react-router-dom reselect
+```
+
+# devDependencies
+```
+@capacitor-community/electron @capacitor/cli @testing-library/react@9 @types/googlemaps @types/jest@24 @types/node @types/react @types/react-dom @types/react-router @types/react-router-dom gh-pages http-server node-sass@4 react-scripts@3.4 rimraf typescript@3.7
+```
